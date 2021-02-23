@@ -18,7 +18,7 @@ let result = square();
 console.log(result);
 square(3);
 
-// Null is meant to clear out something
+// Null as assigned value
 // explicitly done by thee developer
 let age = 28;
 age = null;
