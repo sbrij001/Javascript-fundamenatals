@@ -7,7 +7,7 @@ console.log(result);
 
 // Default arguments
 let getScoreText = function(playerName='Anonymous', playersScore=0){
-  return 'Name: ' + playerName + ',' + 'Score: ' + playersScore;
+  return `Name: ${playerName}, Score: ${playersScore}`;
 };
 console.log(getScoreText());
 
@@ -17,13 +17,12 @@ console.log(getScoreText());
 // 2 args, total and percentage
 // create a default tip percentage
 // return total + tip
-let tip = function(total,tipPercentage=.2){
-  let additionalTip =  total * tipPercentage;
-  console.log('total: ',total);
-  console.log('additional tip ', additionalTip);
-  return total + additionalTip;
-}
+let tip = function(total,tip=.2){
+  let additionalTip =  total * tip;
+  let tipPercentage = tip * 100;
+  return `A ${tipPercentage}% tip on ${total} would be ${additionalTip}`
+};
 let billTotal = tip(100);
-let secondBillTotal = tip(350);
+let secondBillTotal = tip(350, .25);
 console.log(billTotal);
 console.log(secondBillTotal);
