@@ -1,6 +1,6 @@
 let myBook = {
   title: 'All About Love',
-  author: 'Bell Hookes',
+  author: 'Bell Hooks',
   pageCount: 326
 };
 console.log(myBook);
